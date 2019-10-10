@@ -1,6 +1,9 @@
-/* 기기의 화면 크기가 0~3000px일 때 아래 실행문의 코드가 적용 */
+/* 기기의 화면 크기가 0~540px일 때 아래 실행문의 코드가 적용 */
 /* 랩탑, 데스크탑 */
 @media only screen and (max-device-width: 540px) {
+    * {
+        width: 540px;
+    }
 
     .copyright {
         text-align: center;
