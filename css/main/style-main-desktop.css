@@ -22,11 +22,15 @@
 
     .intro {
         font-size: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .logo {
         font-size: 60px;
+    }
+
+    .apps {
+        font-size: 30px;
     }
 
     .copyright {
