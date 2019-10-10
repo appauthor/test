@@ -2,7 +2,7 @@
 /* 랩탑, 데스크탑 */
 @media only screen and (max-device-width: 540px) {
     nav, footer {
-        height: 100px;
+        height: 150px;
         font-size: 35px;
     }
 
@@ -12,10 +12,10 @@
     }
 
     .intro {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .logo {
-        font-size: 60px;
+        font-size: 100px;
     }
 }
