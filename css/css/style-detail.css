@@ -1,0 +1,95 @@
+
+body {
+    background-image: url("../res/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 768px auto;
+    height: 1280px auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.overlay {
+    width: 768px auto;
+    height: 1280px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+    height: 48px;
+    
+    display: flex;
+    align-items: flex-end;
+    
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    
+    border-bottom: 1px solid white;
+}
+
+.nav-left-items {
+    display: flex;
+}
+
+#app-detail {
+    font-weight: bold;
+}
+
+.nav-left-item {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.nav-right-items{
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-right-item {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+
+.main {
+    height: 672px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.info {
+    border-top: 1px solid white;
+    
+    height: 48px;
+    display: flex;
+
+    align-items: center;
+    color: white;
+}
+
+.info-cc {
+    margin-left: 10px;
+}
+
+.info-fam {
+    margin-right: 10px;
+    display: flex;
+    margin-left: auto;
+}

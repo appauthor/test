@@ -1,0 +1,193 @@
+
+body {
+    background-image: url("../res/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 768px auto;
+    height: 1280px auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.overlay {
+    width: 768px auto;
+    height: 1280px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+    height: 48px;
+    
+    display: flex;
+    align-items: flex-end;
+    
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    
+    border-bottom: 1px solid white;
+}
+
+.nav-left-items {
+    display: flex;
+}
+
+.nav-left-item {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+#authors {
+    font-weight: bold;
+}
+
+.nav-right-items{
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-right-item {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+
+.main {
+    height: 672px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+
+    width: 420px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px gray;
+
+    position: relative;
+    animation: appearCard 2s;
+}
+
+.author-image {
+    display: flex;
+    justify-content: center;
+
+    width: 350px;
+}
+
+.p1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid wheat;
+    box-shadow: 2px 3px 10px wheat;
+
+    position: relative;
+    animation: appearImage 3s;
+}
+
+.author-info {
+    width: 700px;
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-right: 20px;
+    text-align: justify;
+
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.author-position {
+    padding-left: 5px;
+
+    animation: appearText 3s;
+}
+
+.author-intro {
+   padding-top: 10px;
+   padding-left: 5px;
+
+   animation: appearText 3s;
+}
+
+
+
+.info {
+    border-top: 1px solid white;
+    
+    height: 48px;
+    display: flex;
+
+    align-items: center;
+    color: white;
+}
+
+.info-cc {
+    margin-left: 10px;
+}
+
+.info-fam {
+    margin-right: 10px;
+    display: flex;
+    margin-left: auto;
+}
+
+
+@keyframes appearCard {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    100% {
+        width: 420px;
+        height: 160px;
+    }
+}
+
+@keyframes appearImage {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    50% {
+        width: 0px;
+        height: 0px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes appearText {
+
+    0% {
+        color: rgba(0, 0, 0, 0.0);
+    }
+
+    70% {
+        color: rgba(0, 0, 0, 0.0);
+    }
+
+    100% {
+        color: black;
+    }
+}

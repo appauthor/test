@@ -1,0 +1,165 @@
+
+body {
+    background-image: url("../res/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 768px auto;
+    height: 1280px auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.overlay {
+    width: 768px auto;
+    height: 1280px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+    height: 48px;
+    
+    display: flex;
+    align-items: flex-end;
+    
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    
+    border-bottom: 1px solid white;
+}
+
+.nav-left-items {
+    display: flex;
+}
+
+.nav-left-item {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+#contact {
+    font-weight: bold;
+}
+
+.nav-right-items{
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-right-item {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+
+.main {
+    height: 672px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 420px;
+    height: 250px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* To make sure that all label have the same size and are properly align */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on every browsers */
+    resize: vertical;
+}
+
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+}
+
+
+
+
+
+
+
+
+.info {
+    border-top: 1px solid white;
+    
+    height: 48px;
+    display: flex;
+
+    align-items: center;
+    color: white;
+}
+
+.info-cc {
+    margin-left: 10px;
+}
+
+.info-fam {
+    margin-right: 10px;
+    display: flex;
+    margin-left: auto;
+}

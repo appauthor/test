@@ -1,0 +1,16 @@
+/* 기기의 화면 크기가 0~3000px일 때 아래 실행문의 코드가 적용 */
+/* 랩탑, 데스크탑 */
+@media only screen and (max-device-width: 3000px) {
+
+    nav {
+        height: 50px;
+    }
+
+    section {
+        height: 650px;
+    }
+
+    footer {
+        height: 50px;
+    }
+}
