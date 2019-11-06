@@ -71,6 +71,8 @@
     .ab {
         width: 200px;
         height: 61px;
+
+        border-radius: 11px;
     }
 
 
@@ -84,7 +86,7 @@
 
         margin-bottom: 40px;
     }
-    
+
 
     form {
         width: 600px;
