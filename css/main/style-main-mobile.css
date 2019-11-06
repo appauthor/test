@@ -82,25 +82,25 @@
         width: 380px;
         height: 116px;
 
-        border-radius: 17px;
+        border-radius: 18px;
         margin-top: 10px;
     }
 
 
     .author-info {
-        width: 800px;
+        width: 100%;
     }
 
     .author-image {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
 
         margin-bottom: 80px;
     }
 
     #ai-h3 {
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 35px;
+        line-height: 50px;
     }
 
 
