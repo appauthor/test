@@ -2,7 +2,7 @@ window.addEventListener('scroll', function(event) {
     let scrolled = window.scrollY;
     let nav = document.getElementById("nav");
 
-    console.log(window.innerWidth, scrolled);
+    //console.log(window.innerWidth, scrolled);
 
     // 디바이스 가로 사이즈에 따라 네비게이션 배경색이 변하는 위치를 달리한다.
     var changingY = 200;
@@ -16,9 +16,6 @@ window.addEventListener('scroll', function(event) {
         nav.style.backgroundColor = "transparent";
     }
 });
-
-
-
 
 
 function toKorean() {
