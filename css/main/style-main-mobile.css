@@ -17,6 +17,8 @@
     nav, footer {
         height: 120px;
         font-size: 35px;
+
+        background-color: red;
     }
 
     .nav-left {
@@ -92,8 +94,8 @@
     }
 
     .author-image {
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height: 400px;
 
         margin-bottom: 80px;
     }
