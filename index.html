@@ -11,45 +11,85 @@
     </head>
     
     <body>
+        <nav id="nav">
+            <div class="nav-left">
+                <a href="#section1"><div class="nav-item" id="home"> 홈 </div></a> <!-- home -->
+                <a href="#section2"><div class="nav-item" id="apps"> 출시작 </div></a> <!-- App Works -->
+                <a href="#section3"><div class="nav-item" id="authors"> 작가 소개 </div></a> <!-- App Authors -->
+                <a href="#section4"><div class="nav-item" id="contact"> 문의하기 </div></a> <!-- Contact Us -->
+            </div>
+            <div class="nav-right">
+                <div class="nav-item" onclick="toKorean()" style="cursor:pointer"> 한글 </div>
+                <div class="nav-item" onclick="toEnglish()" style="cursor:pointer"> English </div>
+            </div>
+        </nav>
+
         <div class="background"></div>
 
         <div class="overlay"></div>
 
         <div class="contents">
-            <nav>
-                <div class="nav-left">
-                    <div class="nav-item" id="home" onclick="moveTo('home', 'home')" style="cursor: pointer;">
-                        Home
-                    </div>
-                    <div class="nav-item" id="home" onclick="moveTo('authors', 'home')" style="cursor: pointer;">
-                        App Works
-                    </div>
-                    <div class="nav-item" id="home" onclick="moveTo('authors', 'home')" style="cursor: pointer;">
-                        App Authors
-                    </div>
-                    <div class="nav-item" id="home" onclick="moveTo('contact', 'home')" style="cursor: pointer;">
-                        Contact Us
-                    </div>
-                </div>
-                <div class="nav-right">
-                    <div class="nav-item">
-                        한글
-                    </div>
-                    <div class="nav-item">
-                        영어
-                    </div>
-                </div>
-            </nav>
-            
-            <section>
+            <section class="section1" id="section1">
                 <div class="intro">앱, 하나의 작품이 되다.</div>
                 <div class="logo">앱틀리에</div>
             </section>
+
+            <hr>
+
+            <section class="section2" id="section2">
+                <div class="app-box">
+                    <div class="app-icon"></div>
+                    <div class="app-detail">
+                        <h2 class="app-subname">생일과 기념일엔,</h2>
+                        <h1 class="app-name">축하해</h1>
+                        <h3 class="app-subtitle">예쁘게 전하는 축하 메시지</h4>
+                    </div>
+                </div>
+                <a href="https://google.com">
+                    <img class="ab" src="res/ab_kr.jpg">
+                </a>
+            </section>
+
+            <hr>
+
+            <section class="section3" id="section3">
+                <div class="author-info">
+                    <div class="author-image"></div>
+                    <div class="author-intro">
+                        <h3 id="ai-h3">
+                            안녕하세요.
+                            <br>앱틀리에를 찾아주셔서 감사합니다.
+                            <br>앞으로 출시될 애플리케이션들이
+                            <br>단순히 소프트웨어로써 제공되는 것이 아니라
+                            <br>인문학적이고 예술적인 어떤 철학을 담은
+                            <br>하나의 작품이 될 수 있도록 노력하겠습니다.
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="section4" id="section4">
+                <div>
+                    <h1 id="cu">문의하기</h1>
+                    <form>
+                        <input class="cu-email" type="email" name="email" value="이메일 주소">
+                        <input class="cu-title" type="text" name="title" value="제목">
+                        <textarea id="cu-contents" style="resize: none">내용</textarea>
+                        <h4 id="cu-send" onclick="">보내기</h4>
+                    </form>
+                </div>
+            </section>
             
             <footer>
-                <div class="copyright">
-                    Copyright © Apptelier all rights reserved.
-                </div>
+                <h4 class="copyright">
+                    © 앱틀리에 (Apptelier) 
+                    &nbsp;&nbsp; | &nbsp;&nbsp; 
+                    사업자 등록번호 : 229-01-76224
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+                    대표 : 장영석
+                </h4>
             </footer>
         </div>
 
