@@ -12,26 +12,41 @@
         <!-- 모든 브라우저에서 네비 아이템 클릭시 부드럽게 이동할 수 있게 하는 코드 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function() {
-            // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-                        // Store hash
-                        var hash = this.hash;
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function() {
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
+            var kind = "unknown";
+            if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 )  {
+                kind = "Opera";
+            } else if(navigator.userAgent.indexOf("Chrome") != -1 ) {
+                kind = "Chrome";
+            } else if(navigator.userAgent.indexOf("Safari") != -1) {
+                kind = "Safari";
+            } else if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                kind = "Firefox";
+            } else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) { //IF IE > 10
+                kind = "IE";
+            }
+
+            if (kind == "Safari" || kind == "IE") {
+                $(document).ready(function() {
+                // Add smooth scrolling to all links
+                    $("a").on('click', function(event) {
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+                            // Store hash
+                            var hash = this.hash;
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 700, function() {
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                        } // End if
+                    });
                 });
-            });
+            }
         </script>
 
     </head>
@@ -42,7 +57,7 @@
                 <a href="#section1"><div class="nav-item" id="home"> 홈 </div></a>
                 <a href="#section2"><div class="nav-item" id="apps"> 출시작 </div></a>
                 <a href="#section3"><div class="nav-item" id="authors"> 작가 소개 </div></a>
-                <a href="#section4"><div class="nav-item" id="contact"> 문의하기 </div></a>
+                <a href="mailto:rnbsoulys@naver.com?Subject=[Inquiry]"><div class="nav-item" id="contact"> 문의하기 </div></a>
             </div>
             <div class="nav-right">
                 <div class="nav-item" onclick="toKorean()" style="cursor:pointer"> 한글 </div>
@@ -87,13 +102,15 @@
                             <br>앱틀리에를 찾아주셔서 감사합니다.
                             <br>앞으로 출시될 애플리케이션들이
                             <br>단순히 소프트웨어로써 제공되는 것이 아니라
-                            <br>인문학적이고 예술적인 어떤 철학을 담은
+                            <br>인문학적이고 예술적인 철학을 담은
                             <br>하나의 작품이 될 수 있도록 노력하겠습니다.
                         </h3>
                     </div>
                 </div>
             </section>
 
+
+            <!--
             <hr>
 
             <section class="section4" id="section4">
@@ -107,7 +124,9 @@
                     </form>
                 </div>
             </section>
-            
+            -->
+
+
             <footer>
                 <h4 class="copyright">
                     © 앱틀리에 (Apptelier) 
